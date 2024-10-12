@@ -1,7 +1,11 @@
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+
 function App() {
   return (
     <div>
-      <h1>hello g</h1>
+      <Navbar />
+      <Hero />
     </div>
   );
 }

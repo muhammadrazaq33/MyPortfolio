@@ -10,3 +10,32 @@
 body {
   background-color: rgb(251, 249, 249);
 }
+.list li {
+  margin: 0 1.5rem;
+}
+.list li a {
+  color: grey;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+}
+.list li a:hover {
+  color: tomato;
+}
+.list li a::before {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background: tomato;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+.list li a:hover::before {
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0);
+}
