@@ -34,7 +34,7 @@ const Navbar = () => {
       <nav
         className={`container mx-auto p-[2rem] flex justify-between items-center h-20 sm:20`}
       >
-        <div className="text-[#FC7617] md:text-3xl sm:text-2xl text-[1.6rem] ">
+        <div className="text-[#FC7617] md:text-3xl font-Lobster sm:text-2xl text-[1.6rem] ">
           Muhammad Razaq
         </div>
         {/* right side */}
