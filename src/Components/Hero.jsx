@@ -30,7 +30,7 @@ const Hero = () => {
         {/* Glue-2 */}
         <div className="w-64 h-64 bg-[#FC7617] rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0"></div>
         {/*end of Glue-2 */}
-        <div className="flex flex-col items-center gap-5 lg:flex-row">
+        <div className="flex flex-col items-center lg:gap-5 gap-y-16 lg:flex-row">
           {/* content */}
           <div className=" w-full space-y-5 lg:w-1/2">
             <p className="text-[#545454] text-[1.9rem] leading-5 font-bold">

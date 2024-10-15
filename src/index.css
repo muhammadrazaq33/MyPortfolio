@@ -32,6 +32,19 @@ body {
 section {
   @apply py-20 md:py-28;
 }
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fc7617;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
 .list li {
   margin: 0 1.5rem;
 }
@@ -69,4 +82,55 @@ section {
 }
 .btn:hover {
   @apply opacity-90;
+}
+
+/* Aout ============= */
+/*
+=============== 
+About
+===============
+*/
+/* section title added to globals */
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.about-title .underline {
+  margin-left: 0rem;
+}
+.about-center {
+  display: grid;
+  gap: 3rem 2rem;
+}
+.about-img {
+  justify-self: center;
+}
+.hero-photo {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid #fc7617;
+    top: 2rem;
+    left: -2rem;
+    border-radius: 0.5rem;
+  }
+  .about-info {
+    align-self: center;
+  }
 }
